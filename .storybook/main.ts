@@ -14,7 +14,7 @@ const config: StorybookConfig = {
     "@chromaui/addon-visual-tests",
   ],
   framework: {
-    name: "@storybook/nextjs",
+    name: "@storybook/nextjs", // 👈 you can change the framework name/type
     options: {},
   },
   docs: {

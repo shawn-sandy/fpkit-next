@@ -12,6 +12,8 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
+    "@fpkit/react": "^0.3.20",
+    "@shawnsandy/first-paint": "^2.18.9",
     "next": "13.5.6",
     "react": "^18",
     "react-dom": "^18"

@@ -2,10 +2,11 @@
 import React from "react";
 
 import { Main as MainSidebar, Aside } from "@fpkit/react";
+import Sidebar from "./sidebar";
 
 export type MainProps = {
   children: React.ReactNode;
-  sidebar?: React.ReactNode;
+  sidebar?: Boolean;
   styles?: React.CSSProperties;
   sidebarStyles?: React.CSSProperties;
 };
@@ -24,7 +25,18 @@ const Main = ({
     <MainSidebar {...props} styles={style}>
       <section data-content data-fluid>
         <article>{children}</article>
-        {sidebar && <Aside styles={sidebarStyles}>{sidebar}</Aside>}
+        {sidebar && (
+          <Aside styles={sidebarStyles}>
+            <Sidebar>
+              Nostrud non non est voluptate sit in laboris dolore labore id
+              proident tempor. Ex cillum aliqua laborum mollit aliquip
+              exercitation occaecat dolore sit. Excepteur fugiat dolor sint
+              nostrud elit aliquip voluptate amet eu id ea cillum. Eiusmod
+              aliqua voluptate deserunt veniam qui consectetur pariatur ipsum
+              ipsum.
+            </Sidebar>
+          </Aside>
+        )}
       </section>
     </MainSidebar>
   );

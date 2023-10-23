@@ -26,7 +26,7 @@ export default function RootLayout({
           headerSubtitle="This is were I put my cool elevator pitch"
           data-style="cover"
         />
-        <Main>{children}</Main>
+        <Main sidebar={true}>{children}</Main>
       </body>
     </html>
   );

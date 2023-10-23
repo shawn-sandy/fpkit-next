@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Title } from "@fpkit/react";
+import { Header as MainHeader, Title } from "@fpkit/react";
 
 export type MainHeaderProps = {
   headerTitle: React.ReactNode;
@@ -9,7 +9,7 @@ export type MainHeaderProps = {
 
 const defaultStyles = {};
 
-const MainHeader = ({
+const Header = ({
   headerTitle,
   headerSubtitle,
   children,
@@ -17,15 +17,15 @@ const MainHeader = ({
 }: MainHeaderProps) => {
   return (
     <>
-      <Header {...props}>
+      <MainHeader {...props}>
         <Title elm="h2">{headerTitle}</Title>
         <Title elm="h3">{headerSubtitle}</Title>
         {children}
-      </Header>
+      </MainHeader>
     </>
   );
 };
 
-export default MainHeader;
-MainHeader.displayName = "MainHeader";
-MainHeader.styles = defaultStyles;
+export default Header;
+Header.displayName = "Header";
+Header.styles = defaultStyles;

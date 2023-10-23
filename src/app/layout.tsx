@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
-// import './globals.css'
+import Main from "@/components/layout/main";
+import Header from "@/components/layout/header";
+import Sidebar from "@/components/layout/sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header
+          headerTitle="Page title"
+          headerSubtitle="This is were I put my cool elevator pitch"
+          data-style="cover"
+        />
+        <Main>{children}</Main>
+      </body>
     </html>
   );
 }

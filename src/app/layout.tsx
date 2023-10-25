@@ -4,7 +4,7 @@ import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
 import Main from "@/components/layout/main";
 import Header from "@/components/layout/header";
-import Sidebar from "@/components/layout/sidebar";
+import Nav from "@/components/layout/nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Nav />
         <Header
           headerTitle="Page title"
           headerSubtitle="This is were I put my cool elevator pitch"

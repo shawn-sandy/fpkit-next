@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { Main as MainSidebar, Aside } from "@fpkit/react";
+import { Main as MainSection, Aside } from "@fpkit/react";
 import Sidebar from "./sidebar";
 
 export type MainProps = {
@@ -23,7 +23,7 @@ const Main = ({
   const style: React.CSSProperties = { ...defaultStyles, ...styles };
   return (
     <>
-      <MainSidebar {...props} styles={style} data-style="cover">
+      <MainSection {...props} styles={style} data-style="cover">
         <section data-content data-fluid>
           <article>{children}</article>
           {sidebar && (
@@ -39,7 +39,7 @@ const Main = ({
             </Aside>
           )}
         </section>
-      </MainSidebar>
+      </MainSection>
     </>
   );
 };

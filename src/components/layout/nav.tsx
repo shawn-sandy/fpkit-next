@@ -7,6 +7,8 @@ import { Icon } from "@fpkit/react/icons";
 
 export type NavProps = {
   children?: React.ReactNode;
+  test: any;
+
 };
 
 const defaultStyles = {};

@@ -12,7 +12,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@fpkit/react": "^0.3.24",
+    "@fpkit/react": "^0.3.26",
     "@shawnsandy/first-paint": "^2.18.12",
     "next": "^14.0.0",
     "react": "^18",
